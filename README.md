@@ -11,5 +11,6 @@ React Cryptocurrency Application.
 - React
 - Redux Toolkit
 - Ant Design
+- CSS
 - Chart.js
 - RapidAPI
