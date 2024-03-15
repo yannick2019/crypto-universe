@@ -3,9 +3,11 @@ import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
 
 import { useGetCryptosQuery } from "../services/cryptoApi";
+import Cryptocurrencies from "./Cryptocurrencies";
+import News from "./News";
 
 const Homepage = () => {
-  const { data, isFetching } = useGetCryptosQuery();
+  const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
 
   if (isFetching) {
@@ -46,6 +48,24 @@ const Homepage = () => {
           />
         </Col>
       </Row>
+      <div className="home-heading-container">
+        <Typography.Title level={2} className="home-title">
+          Top 10 Cryptocurrencies in the world
+        </Typography.Title>
+        <Typography.Title level={3} className="show-more">
+          <Link to="/cryptocurrencies">Show more</Link>
+        </Typography.Title>
+      </div>
+      <Cryptocurrencies simplified />
+      <div className="home-heading-container">
+        <Typography.Title level={2} className="home-title">
+          Latest Crypto News
+        </Typography.Title>
+        <Typography.Title level={3} className="show-more">
+          <Link to="/news">Show more</Link>
+        </Typography.Title>
+      </div>
+      <News simplified />
     </>
   );
 };
