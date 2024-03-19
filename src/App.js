@@ -17,7 +17,7 @@ function App() {
         <Navbar className="layout" />
       </div>
       <div className="main">
-        <Layout>
+        <Layout className="layout">
           <div className="routes">
             <Routes>
               <Route path="/" element={<Homepage />} />

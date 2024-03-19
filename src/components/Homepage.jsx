@@ -52,20 +52,20 @@ const Homepage = () => {
         <Typography.Title level={2} className="home-title">
           Top 10 Cryptocurrencies in the world
         </Typography.Title>
-        <Typography.Title level={3} className="show-more">
-          <Link to="/cryptocurrencies">Show more</Link>
-        </Typography.Title>
       </div>
       <Cryptocurrencies simplified />
+      <Typography.Title level={3} className="show-more">
+        <Link to="/cryptocurrencies">Show more</Link>
+      </Typography.Title>
       <div className="home-heading-container">
         <Typography.Title level={2} className="home-title">
           Latest Crypto News
         </Typography.Title>
-        <Typography.Title level={3} className="show-more">
-          <Link to="/news">Show more</Link>
-        </Typography.Title>
       </div>
       <News simplified />
+      <Typography.Title level={3} className="show-more">
+        <Link to="/news">Show more</Link>
+      </Typography.Title>
     </>
   );
 };

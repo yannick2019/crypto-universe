@@ -4,6 +4,8 @@ React Cryptocurrency Application.
 
 ## Preview
 
+![screen-shot](./images/screen-shot.png)
+
 ## See it live
 
 ## Used Tech
@@ -12,5 +14,4 @@ React Cryptocurrency Application.
 - Redux Toolkit
 - Ant Design
 - CSS
-- Chart.js
 - RapidAPI
