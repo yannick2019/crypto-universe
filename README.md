@@ -4,7 +4,7 @@ React Cryptocurrency Application.
 
 ## Preview
 
-![screen-shot](./images/screen-shot.png)
+![screen-shot](./src/images/screen-shot.png)
 
 ## See it live
 
