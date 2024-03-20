@@ -50,11 +50,16 @@ a:hover {
   background-color: rgb(0, 21, 41);
 }
 
+.menu-control-container {
+  display: none;
+}
+
 .logo-container {
   background-color: #001529;
   display: flex;
   padding: 20px;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -271,6 +276,14 @@ a:hover {
   .main {
     margin-left: 170px;
   }
+
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .coin-desc-link {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -300,6 +313,18 @@ a:hover {
 
   .menu-control-container {
     display: block !important;
+  }
+
+  .layout {
+    padding: 0 10px;
+  }
+
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .coin-desc-link {
+    flex-direction: column;
   }
 
   .ant-menu {
